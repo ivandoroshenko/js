@@ -271,7 +271,7 @@ var amount = +prompt('Введите сумму вклада $(от 5000 до 70
             } else console.log('Введите корректную информацию!');
 } 
 //1th cicle
-
+    
 //for 8 - 10k
 else if (amount >= 8000 && amount <= 10000) {
         var percent = +prompt('Введите процентную ставку (%) (10, 12, 15)', '');

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 14.11.2017 ========================== -->
+    
+    <!-- So, now is 5th lesson or (something like that)  of my JS learning in Beetroot academny
+    by advice of Js-devloper and pretty girl Lidia Holly i decided to write a combine of workbook 
+    and daybook conspectum where I'm going to note my day experience, save 
+    interesting tasks and links and write down my thought about me and about JS learning.
+    So... let's begin and may the Force will be with me. -->
+    
+    <!-- For motivation I guess i should save Lidia's article http://techrocks.ru/2017/12/14/how-to-learn-programming/ -->
+        <!-- 1. Advice to me  - once per week read Lida's article )) -->
+        
+        
+        <!-- Algorythm of multiplication table --> ================
+
+        <script>
+               var table, row, cell; /* declare global variables for table, rows, cells and counts */
+                table = document.createElement('table'); /* table create */
+                table.style.textAlign = 'right'; /* right textalign in table */   
+                table.style.fontFamily = 'sans-serif'; /* font style */
+                table.style.border = '1px solid #555';
+                
+                document.body.appendChild(table); 
+                
+                for (var i = 1; i < 13; i++) { /* outer loop for first mulptiplier  */
+                    row = document.createElement('tr'); // create a variable for tr creations (rows)
+                
+                    for (var j = 1; j < 10; j++) { //second multiplier
+                        cell = document.createElement(i == 1 || j == 1 ? 'th' : 'td'); //bold for th if first row
+                                                                                        // or first column
+                        cell.appendChild(document.createTextNode(i * j)); //create text node
+                        cell.style.padding = '4px'; 
+                        cell.style.width = 100 / 9 + '%'; // table width
+                        row.appendChild(cell); //add new cell
+                    }
+                    table.appendChild(row); //add new row
+                }
+               
+        </script>
+
+
+
+
+
+
+
+
+</body>
+</html>

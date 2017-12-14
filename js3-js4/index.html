@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<!-- <div class="parent">
+    <span class="prev span">Previous</span>
+
+    <h1 id="title">DOM element</h1>
+    <span class="next span">Next</span>
+</div> -->
+<!--     <script>
+//         var title = document.getElementById('title');
+//             parent = document.getElementById('parent');
+// //      console.log(parent.childNodes); //вернуть все дочерние элементы с текстовыми узлами
+// //      console.log(parent.children); //вернуть все дочерние элементы без тестовых узлов
+//         console.log( title.parentNode.parentNode ); //Возврат ближайшего родителя элемента title каждый новый parent.Node поднимается к следующему родителю
+//         console.log(title.previousSibling); //возвращает текстовый узел предыдущего соседа
+//         console.log(title.nextSibling); //возвращает тестовый узел следующего соседа
+//         var byTag = document.getElementsByTagName('span');
+//         console.log(byTag);
+//         var byClass = document.getElementsByClassName('span');
+//         console.log(byClass);
+
+//         var bySelector = document.querySelector('.prev'); //вытаскивает по любому селектору один элемент (первый), похоже на работу getelementbyid
+//         console.log(bySelector); 
+
+//         var bySelectors = document.querySelectorAll('.prev');
+//         console.log(bySelectors);
+//         arr.forEach(element(function (element, index) {
+//             console.log(element, index);
+//         }));
+// var arr = [1,2,3,4,5];
+// var newArr = arr.filter(function (element){
+//     return element % 2 === 0; //работает как push по условию в друггой массив
+//}
+// var newArr = arr.map (function(element){
+//     return element * element; //такой же как метод foreach но тот работает как обычный цикл а map работает с возвратом
+// }
+//предпочтительные инструменты для работы с DOM document.getelementbyid, document.queryselector, queryselectorsall
+   //innerText, innerHTML, outerHTTML лучше пользоваться только в учебных целях
+   //при использовании селекторов которые обращаются ко всем элементам а не к одному  - лучше использовтаь перебор и обращатсья к каждому конкретному эелементу
+   //dataset хранит в себе строку, поэтому в скобках кавычки не нужны
+//    </script>
+    <!-- <script src="main.js"></script> -->
+   <!--  <div class="container"></div>
+    <script>
+        (function () {
+
+            function append (tag, text, parent){
+                var element = document.createElement(tag){
+                    textNode = document
+                }
+
+            }
+            var question = confirm ('Создаем ли динамические элементы'),
+                container = document.querySelector('.container');
+            if (question){
+                var i = 1;
+                var interval = setInterval(function () {
+
+                    if (i === 5) {
+                        clearInterval(interval);
+                    }
+                    var element = document.createElement('span');
+                        text = document.createTextNode(i);
+                    element.appendChild(text);
+                    container.appendChild(element);
+                    i++;
+                }, 1000)
+
+            } else {
+                var emptyTag = document.createElement('h3'),
+                text = document.createTextNode('Вы отказались от создания динамических элементов');
+                emptyTag.style.backgroundColor = 'red';
+                emptyTag.style.color = 'white';
+                emptyTag.appendChild(text);
+                container.appendChild(emptyTag);
+            }
+        })();
+     </script> -->
+     <style>
+         div {
+             background: #000;
+         }
+     </style>
+     <script>
+         var square = document.createElement('div');
+         var posX = Math.round(Math.random() * window.innerWidth - w);
+         var posY = Math.round(Math.random() * window.innerHeight - h);
+
+         if (posX < 100){
+             posX = Math.round(Math.random() * 100 + w);
+         }
+         square.style.position = 'absolute';
+         square.style.left = 
+
+     </script>
+</body>
+</html>

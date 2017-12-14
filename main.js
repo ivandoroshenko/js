@@ -252,6 +252,9 @@ if (a > c || b > c) {
 }
 alert(maxCount); */
 
+var amount; 
+do {
+    
 var amount = +prompt('Введите сумму вклада $(от 5000 до 7000, от 8000 до 10000, от 11000) ', '');
 
 //1th cicle
@@ -302,4 +305,79 @@ else if (amount >= 8000 && amount <= 10000) {
         } else if (amount == null) {
             console.log('Увы, вы ничего не выбрали!');
         } else console.log('Введите корректную информацию!');
-    } else console.log ('Выьберите верный тарифный план, сударь!');
+    } else console.log ('Выберите верный тарифный план, сударь!');
+} while (amount !=+null);
+
+/* var many;
+var termCredit;
+var percent;
+do {
+    var many = +prompt ('Введите желаемую сумму', 0);
+        if ( many >= 5000 && many <= 7000 ){
+            console.log ( 'Ваша сумма ' + many );
+
+            var percent = +prompt ('Выбирите процентную ставку', '');
+
+                switch (percent) {
+
+                    case 25:
+                        console.log ('Ваш процент 25%');
+                            var termCredit = +prompt ('Вам доступны такие сроки: 7, 9 и 12 лет');
+
+                                if (termCredit === 7) {
+                                    console.log (' Вы получите :' + many * (percent / 100) * termCredit );
+                                } 
+                                else if (termCredit === 9) {
+                                    console.log (' Вы получите :' + many * (percent / 100) * termCredit );
+                                }
+                                else if (termCredit === 12) {
+                                    console.log (' Вы получите :' + many * (percent / 100) * termCredit );
+                                } else {
+                                    console.log ('Не верно выбран срок');
+                                }
+                                
+                            break;
+
+                    case 27:
+                        console.log ('Ваш процент 27%');
+                            var termCredit = +prompt ('Вам доступны такие сроки: 7, 9 и 12 лет');
+
+                                if (termCredit === 7) {
+                                    console.log (' Вы получите :' + many * (percent / 100) * termCredit );
+                                } 
+                                else if (termCredit === 9) {
+                                    console.log (' Вы получите :' + many * (percent / 100) * termCredit );
+                                }
+                                else if (termCredit === 12) {
+                                    console.log (' Вы получите :' + many * (percent / 100) * termCredit );
+                                } else {
+                                    console.log ('Не верно выбран срок');
+                                }
+                        break;
+
+                    case 30:
+                        console.log ('Ваш процент 30%');
+                            var termCredit = +prompt ('Вам доступны такие сроки: 7, 9 и 12 лет');
+
+                                if (termCredit === 7) {
+                                    console.log (' Вы получите :' + many * (percent / 100) * termCredit );
+                                } 
+                                else if (termCredit === 9) {
+                                    console.log (' Вы получите :' + many * (percent / 100) * termCredit );
+                                }
+                                else if (termCredit === 12) {
+                                    console.log (' Вы получите :' + many * (percent / 100) * termCredit );
+                                } else {
+                                    console.log ('Не верно выбран срок');
+                                }
+                        break;
+                    
+                    default:
+                        console.log ('Ваш процент не верный');
+                        break;
+                } 
+
+        } else  {
+            console.log ('Сумма не верна');
+        } 
+} while (many != null); */

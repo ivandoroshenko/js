@@ -1,0 +1,40 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Seravek;
+}
+
+.nav__list {
+    display: flex;
+    list-style: none;
+}
+
+.nav__item {
+    position: relative;
+    margin-right: 25px;
+}
+
+.nav__item i {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.nav__link {
+    display: block;
+    padding: 10px 25px;
+    text-decoration: none;
+}
+
+.nav__link:hover {
+    background: sandybrown;
+    color: #fff;
+}
+
+.dropdown {
+    position: absolute;
+    width: 100%;
+    border: 1px solid #000;
+    text-align: center;
